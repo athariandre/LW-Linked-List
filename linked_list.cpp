@@ -6,7 +6,7 @@ using std::cout, std::endl, std::string, std::ostream;
 
 void MyList::add(const std::string& name, int score) {
     MyNode* n = new MyNode(name, score);
-    if(_head = nullptr){
+    if(_head == nullptr){
         _head = n;
         _tail = n;
         _size++;
@@ -18,7 +18,7 @@ void MyList::add(const std::string& name, int score) {
 }
 
 void MyList::clear() {
-    if(_head = nullptr){
+    if(_head == nullptr){
         return;
     }
     MyNode* m = _head;
